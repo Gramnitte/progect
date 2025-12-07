@@ -5,7 +5,7 @@
 <h5>-    gestisce cluster di forma arbitraria;</h5>
 <h5>-    identifica naturalmente il rumore (etichette = -1);</h5>
 <h5>-    è robusto agli outlier.</h5>
-<br> </br>
+
 <h4>Due parametri fondamentali utilizzati:</h4>
 <h5>-    eps: raggio di vicinanza tra punti;</h5>
 <h5>-    minPts: minimo numero di punti per definire una zona densa.</h5>
