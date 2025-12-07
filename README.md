@@ -1,11 +1,11 @@
 <h1>📊 DBSCAN – Clustering di prodotti basato sulla densità</h1>
-<h4>Progetto per il corso “Principi e Modelli della Percezione” – A.A. 2025/2026</h4>
+<h3>Progetto per il corso “Principi e Modelli della Percezione” – A.A. 2025/2026</h3>
 <h5>DBSCAN (Density-Based Spatial Clustering of Applications with Noise) è stato scelto perché:</h5>
 <h5>non richiede di specificare il numero di cluster;</h5>
 <h5>gestisce cluster di forma arbitraria;</h5>
 <h5>identifica naturalmente il rumore (etichette = -1);</h5>
 <h5>è robusto agli outlier.</h5>
-
+<h4></h4>
 <h4>Due parametri fondamentali utilizzati:</h4>
 <h5>eps: raggio di vicinanza tra punti;</h5>
 <h5>minPts: minimo numero di punti per definire una zona densa.</h5>
