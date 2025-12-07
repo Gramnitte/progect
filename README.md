@@ -1,4 +1,4 @@
-#📊 DBSCAN – Clustering di prodotti basato sulla densità
+<h1>📊 DBSCAN – Clustering di prodotti basato sulla densità<h1>
 Progetto per il corso “Principi e Modelli della Percezione” – A.A. 2025/2026
 ###DBSCAN (Density-Based Spatial Clustering of Applications with Noise) è stato scelto perché:
 non richiede di specificare il numero di cluster;
