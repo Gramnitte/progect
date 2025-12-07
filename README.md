@@ -1,6 +1,33 @@
-🔎 DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
-DBSCAN è un popolare algoritmo di clustering basato sulla densità. A differenza di algoritmi come k-means, non richiede di specificare il numero di cluster in anticipo e identifica i cluster come regioni contigue ad alta densità di punti dati.
+📊 DBSCAN – Clustering di prodotti basato sulla densità
+Progetto per il corso “Principi e Modelli della Percezione” – A.A. 2025/2026
 
-💡 Caratteristiche PrincipaliIdentificazione di Cluster Arbitrari: È eccellente per trovare cluster di forma non convessa o arbitraria che k-means farebbe fatica a separare.Gestione del Rumore (Noise): Classifica i punti che non appartengono a nessun cluster ad alta densità come punti di rumore o outlier, gestendoli in modo efficace.Parametri Chiave: Richiede due parametri principali:$\epsilon$ (Eps): Il raggio massimo che definisce il vicinato di un punto.$M$ (MinPts): Il numero minimo di punti richiesti all'interno di $\epsilon$ per formare un cluster (densità).
+📁 Dataset
+Il dataset contiene 800 prodotti, ciascuno monitorato per 52 settimane. Ogni riga rappresenta un prodotto e ogni colonna il volume di vendita settimanale.
 
-🚀 Come Funziona (In Breve)L'algoritmo opera distinguendo tre tipi di punti:Punti Centrali (Core Points): Hanno almeno $M$ punti (inclusi sé stessi) all'interno del loro raggio $\epsilon$.Punti di Bordo (Border Points): Sono all'interno del raggio $\epsilon$ di un Punto Centrale, ma non sono essi stessi Punti Centrali.Punti di Rumore (Noise Points): Non sono né Punti Centrali né Punti di Bordo.I cluster sono formati collegando i Punti Centrali densamente raggiungibili tra loro e includendo i Punti di Bordo ad essi connessi.
+🎯 Obiettivo
+L’obiettivo del progetto è:
+individuare cluster di prodotti che condividono pattern di vendita simili;
+identificare outlier con comportamenti anomali;
+supportare strategie di riassortimento e analisi delle performance.
+
+🧠 DBSCAN
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) è stato scelto perché:
+non richiede di specificare il numero di cluster;
+gestisce cluster di forma arbitraria;
+identifica naturalmente il rumore (etichette = -1);
+è robusto agli outlier.
+
+Due parametri fondamentali utilizzati:
+eps: raggio di vicinanza tra punti;
+minPts: minimo numero di punti per definire una zona densa.
+
+📈 Risultati principali
+Sono state realizzate diverse visualizzazioni per interpretare i cluster:
+Scatter Plot: visualizza i prodotti nel nuovo spazio PCA, distinguendo chiaramente i cluster e gli outlier.
+Istogramma: mostra la distribuzione numerica dei prodotti per cluster.
+Lineplot: illustra il profilo medio delle vendite durante l’anno per ogni cluster.
+Boxplot (W0): rappresenta la distribuzione delle vendite nella prima settimana per ciascun gruppo.
+Heatmap: evidenzia le vendite medie dei cluster nel tempo.
+
+
+
